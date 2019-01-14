@@ -1,0 +1,5 @@
+parei em: 23:16
+
+--> 
+Na hora da importação da base (via guia SQL, do PHP Admin) deu erro nessa instrução
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
