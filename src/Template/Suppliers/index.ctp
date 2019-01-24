@@ -10,6 +10,7 @@
         <li><?= $this->Html->link(__('New Supplier'), ['action' => 'add']) ?></li>
     </ul>
 </nav>
+
 <div class="suppliers index large-9 medium-8 columns content">
     <h3><?= __('Suppliers') ?></h3>
     <table cellpadding="0" cellspacing="0">

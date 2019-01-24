@@ -1,5 +1,4 @@
-parei em: 23:16
-
+parei em 13:37
 --> para fazer
 * colocar o login do bando no README
 

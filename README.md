@@ -49,3 +49,10 @@ configuration relevant for your application.
 The app skeleton uses a subset of [Foundation](http://foundation.zurb.com/) (v5) CSS
 framework by default. You can, however, replace it with any other library or
 custom styles.
+
+## Outras informações
+Materiais das aulas de [Filipe Morelli] (https://www.youtube.com/channel/UCh1mfPKMBS0wZz_E5RRFQ_A)
+
+login para o banco
+id user: root
+senha: não

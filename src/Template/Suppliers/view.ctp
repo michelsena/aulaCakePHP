@@ -13,8 +13,12 @@
         <li><?= $this->Html->link(__('New Supplier'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
+
 <div class="suppliers view large-9 medium-8 columns content">
     <h3><?= h($supplier->SupplierID) ?></h3>
+
+    <p> Variável teste: <?=$aula?></p>
+
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('SupplierName') ?></th>

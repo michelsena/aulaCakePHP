@@ -39,6 +39,7 @@ class SuppliersController extends AppController
         ]);
 
         $this->set('supplier', $supplier);
+        $this->set('aula', 'Aula PHP');
     }
 
     /**
@@ -49,15 +50,20 @@ class SuppliersController extends AppController
     public function add()
     {
         $supplier = $this->Suppliers->newEntity();
+
         if ($this->request->is('post')) {
             $supplier = $this->Suppliers->patchEntity($supplier, $this->request->getData());
+
             if ($this->Suppliers->save($supplier)) {
                 $this->Flash->success(__('The supplier has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
+
             $this->Flash->error(__('The supplier could not be saved. Please, try again.'));
         }
+
+        $supplier->Country = 'Br';
         $this->set(compact('supplier'));
     }
 
@@ -73,15 +79,19 @@ class SuppliersController extends AppController
         $supplier = $this->Suppliers->get($id, [
             'contain' => []
         ]);
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $supplier = $this->Suppliers->patchEntity($supplier, $this->request->getData());
+
             if ($this->Suppliers->save($supplier)) {
                 $this->Flash->success(__('The supplier has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
+
             $this->Flash->error(__('The supplier could not be saved. Please, try again.'));
         }
+
         $this->set(compact('supplier'));
     }
 
@@ -96,10 +106,11 @@ class SuppliersController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $supplier = $this->Suppliers->get($id);
+
         if ($this->Suppliers->delete($supplier)) {
-            $this->Flash->success(__('The supplier has been deleted.'));
-        } else {
-            $this->Flash->error(__('The supplier could not be deleted. Please, try again.'));
+              $this->Flash->success(__('The supplier has been deleted.'));
+          } else {
+              $this->Flash->error(__('The supplier could not be deleted. Please, try again.'));
         }
 
         return $this->redirect(['action' => 'index']);
