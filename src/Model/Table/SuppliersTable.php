@@ -51,7 +51,7 @@ class SuppliersTable extends Table
         $validator
             ->scalar('SupplierName')
             ->maxLength('SupplierName', 255)
-            ->allowEmpty('SupplierName');
+            ->allowEmpty('SupplierName');//notEmpty
 
         $validator
             ->scalar('ContactName')
@@ -85,4 +85,6 @@ class SuppliersTable extends Table
 
         return $validator;
     }
+
+
 }

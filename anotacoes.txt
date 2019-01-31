@@ -1,6 +1,16 @@
-parei em 13:37
+1?ShipperName=&Phone=
+
+parei em 35:22
+
 --> para fazer
 * colocar o login do bando no README
+
+----------------------------------------> dúvidas
+--> secundárias
+* No MeuTesteController, usei o seguinte médoto:         $this->loadModel('Shippers');
+Esse método cria, em tempo de execução, o atributo Shippers no obj da classe MeuTesteController?
+
+* O TableRegistry::get('Shippers'), pega um objeto do tipo Table?
 
 --> 
 Na hora da importação da base (via guia SQL, do PHP Admin) deu erro nessa instrução

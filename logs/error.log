@@ -816,3 +816,954 @@ Stack Trace:
 #25 {main}
 
 
+2019-01-24 11:42:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Shippers could not be found.
+Exception Attributes: array (
+  'class' => 'Shippers',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /shippers
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2019-01-26 12:52:12 Error: [Error] Call to a member function find() on null
+Request URL: /meu-teste
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\MeuTesteController->index()
+#1 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MeuTesteController))
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2019-01-26 12:54:00 Error: [Error] Call to a member function find() on boolean
+Request URL: /meu-teste
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\MeuTesteController->index()
+#1 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MeuTesteController))
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2019-01-26 12:54:00 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-26 12:54:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-26 12:54:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-26 12:54:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-28 11:07:44 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-28 11:07:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-28 11:07:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-28 11:07:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-28 11:08:53 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "shippers" with primary key [NULL]
+Request URL: /meu-teste/view
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\src\Controller\MeuTesteController.php(65): Cake\ORM\Table->get(Array)
+#1 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\MeuTesteController->view()
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MeuTesteController))
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2019-01-28 11:09:05 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "shippers" with primary key [NULL]
+Request URL: /meu-teste/view/
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\src\Controller\MeuTesteController.php(65): Cake\ORM\Table->get(Array)
+#1 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\MeuTesteController->view()
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MeuTesteController))
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2019-01-29 12:06:23 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-29 12:06:23 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-29 12:06:23 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-29 12:06:23 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-29 12:10:01 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-29 12:10:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-29 12:10:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-29 12:10:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 13:52:41 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 13:52:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 13:52:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 13:52:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 13:53:46 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 13:53:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 13:53:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 13:53:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-30 14:00:43 Error: [Cake\Controller\Exception\MissingActionException] Action MeuTesteController::update() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'MeuTesteController',
+  'action' => 'update',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /meu-teste/update/4/?ShipperName=MicSena%20Express&Phone=(48)32555068
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MeuTesteController))
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2019-01-31 09:59:17 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 09:59:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 09:59:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 09:59:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 09:59:35 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 09:59:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 09:59:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 09:59:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 10:05:14 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "shippers" with primary key [NULL]
+Request URL: /meu-teste/update?ShipperID=6&ShipperName=Helcio%20Express&Phone=2233%202340
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\src\Controller\MeuTesteController.php(97): Cake\ORM\Table->get(Array)
+#1 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\MeuTesteController->update()
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MeuTesteController))
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2019-01-31 10:06:26 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "shippers"
+Request URL: /meu-teste/update/ShipperID=6&ShipperName=Helcio%20Express&Phone=2233%202340
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\ORM\Table.php(1620): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\apps\aulaCakePHP\src\Controller\MeuTesteController.php(97): Cake\ORM\Table->get(Array)
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\MeuTesteController->update('ShipperID=6&Shi...')
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MeuTesteController))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2019-01-31 10:07:18 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "shippers"
+Request URL: /meu-teste/update/ShipperID=6&ShipperName=Helcio%20Express&Phone=2233%202340
+Stack Trace:
+#0 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\ORM\Table.php(1620): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\apps\aulaCakePHP\src\Controller\MeuTesteController.php(99): Cake\ORM\Table->get(Array)
+#2 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\MeuTesteController->update('ShipperID=6&Shi...')
+#3 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MeuTesteController))
+#5 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\apps\aulaCakePHP\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2019-01-31 12:14:40 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:14:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:14:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:14:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:15:09 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:15:09 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:15:09 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:15:09 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:25:31 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:25:31 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:25:31 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:25:31 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:01 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:28 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:28 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:28 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:28 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:55 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php line=952 in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:55 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:55 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-01-31 12:26:55 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Error\Debugger.php:952) in [C:\xampp\htdocs\apps\aulaCakePHP\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /meu-teste
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
