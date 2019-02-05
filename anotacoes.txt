@@ -1,6 +1,8 @@
+=> 32 * 7 = 140 => 154
+
 1?ShipperName=&Phone=
 
-parei em 35:22
+parei em 2:05
 
 --> para fazer
 * colocar o login do bando no README
@@ -10,8 +12,12 @@ parei em 35:22
 * No MeuTesteController, usei o seguinte médoto:         $this->loadModel('Shippers');
 Esse método cria, em tempo de execução, o atributo Shippers no obj da classe MeuTesteController?
 
-* O TableRegistry::get('Shippers'), pega um objeto do tipo Table?
+
+
 
 --> 
 Na hora da importação da base (via guia SQL, do PHP Admin) deu erro nessa instrução
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+
+----------------------------------------> para pesquisar
+* Se o TableRegistry::get('Shippers'), pega um objeto do tipo Table
