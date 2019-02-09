@@ -108,6 +108,22 @@ class ShippersController extends AppController
 
     public function busca()
     {
+        $shipper = $this->Shippers->get(1);
+
+        // $this->set('entregador', $shipper);
+        $this->set('shipper', $shipper);
+    }
+
+    public function busca1()
+    {
+        $shipper = $this->Shippers->get(2);
+
+        // $this->set('entregador', $shipper);
+        $this->set('shipper', $shipper);
+    }
+
+    public function busca2()
+    {
         $shipper = $this->Shippers->get(2);
 
         // $this->set('entregador', $shipper);

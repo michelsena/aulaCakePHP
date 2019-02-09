@@ -2,7 +2,7 @@
 
 1?ShipperName=&Phone=
 
-parei em 2:05
+parei na aula 8
 
 --> para fazer
 * colocar o login do bando no README
