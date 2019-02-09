@@ -64,6 +64,10 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
+    $routes->connect('/entregador'          , ['controller' => 'Shippers', 'action' => 'index']);
+    $routes->connect('/entregador/:action/*', ['controller' => 'Shippers']);
+
+    $routes->redirect('/google', "http://www.google.com.br");
     /**
      * Connect catchall routes for all controllers.
      *
@@ -97,3 +101,12 @@ Router::scope('/', function (RouteBuilder $routes) {
  * });
  * ```
  */
+
+ Router::scope('/produtos', function (RouteBuilder $routes) {
+   $routes->connect('/'          , ['controller' => 'Products', 'action' => 'index']);
+   $routes->connect('/adicionar' , ['controller' => 'Products', 'action' => 'add']);
+   $routes->connect('/:action/*' , ['controller' => 'Products']);
+
+
+   $routes->fallbacks(DashedRoute::class);
+ });

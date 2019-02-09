@@ -49,7 +49,6 @@ class ShippersController extends AppController
     public function add()
     {
         $shipper = $this->Shippers->newEntity();
-
         if ($this->request->is('post')) {
             $shipper = $this->Shippers->patchEntity($shipper, $this->request->getData());
             if ($this->Shippers->save($shipper)) {
@@ -104,29 +103,5 @@ class ShippersController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
-    }
-
-    public function busca()
-    {
-        $shipper = $this->Shippers->get(1);
-
-        // $this->set('entregador', $shipper);
-        $this->set('shipper', $shipper);
-    }
-
-    public function busca1()
-    {
-        $shipper = $this->Shippers->get(2);
-
-        // $this->set('entregador', $shipper);
-        $this->set('shipper', $shipper);
-    }
-
-    public function busca2()
-    {
-        $shipper = $this->Shippers->get(2);
-
-        // $this->set('entregador', $shipper);
-        $this->set('shipper', $shipper);
     }
 }
