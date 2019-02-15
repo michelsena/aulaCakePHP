@@ -3,6 +3,9 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 
+use Cake\Utility\Security;
+
+
 /**
  * User Controller
  *
@@ -34,9 +37,9 @@ class UserController extends AppController
      */
     public function view($id = null)
     {
-        $user = $this->User->get($id, [
-            'contain' => []
-        ]);
+        $user = $this->User->get($id, ['contain' => [] ]);
+
+        $user->unsetProperty('password');
 
         $this->set('user', $user);
     }
@@ -51,13 +54,16 @@ class UserController extends AppController
         $user = $this->User->newEntity();
         if ($this->request->is('post')) {
             $user = $this->User->patchEntity($user, $this->request->getData());
+
             if ($this->User->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
+
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
+
         $this->set(compact('user'));
     }
 
@@ -73,15 +79,21 @@ class UserController extends AppController
         $user = $this->User->get($id, [
             'contain' => []
         ]);
+
+        $user->unsetProperty('password');
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $user = $this->User->patchEntity($user, $this->request->getData());
+
             if ($this->User->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
+
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
+
         $this->set(compact('user'));
     }
 
@@ -104,4 +116,31 @@ class UserController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function login(){
+        if ($this->request->is('post') ) {
+          $dados = $this->request->getData();
+
+          $user = $this->User->find('all')
+            ->where(['email'    => $dados['email'] ])
+            ->where(['password' => Security::hash($dados['password'], 'sha256') ])
+              ->first();
+
+          if ($user) {
+              $this->Auth->setUser($user);
+
+              return $this->redirect(['action' => 'index']);
+            } else {
+              $this->Flash->error(__("E-mail e/ou senha incorretos"));
+          }
+
+          // debug($user);
+          // exit();
+        }
+    }
+
+    public function logout(){
+        return $this->redirect( $this->Auth->logout() );
+    }
+
 }

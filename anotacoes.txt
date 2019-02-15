@@ -2,10 +2,10 @@
 
 1?ShipperName=&Phone=
 
-parei na aula 8
+parei na aula 
 
 --> para fazer
-* colocar o login do bando no README
+* no Auth, comentar as rotas do loginRedirect e loginLogout
 
 ----------------------------------------> dúvidas
 --> secundárias
@@ -19,5 +19,8 @@ Esse método cria, em tempo de execução, o atributo Shippers no obj da classe Meu
 Na hora da importação da base (via guia SQL, do PHP Admin) deu erro nessa instrução
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 
-----------------------------------------> para pesquisar
+----------------------------------------> para pesquisar/ver
+* Nos elementos criados por nós, ver c é possível chamar como se fosse um atributo como acontece no Flash
 * Se o TableRegistry::get('Shippers'), pega um objeto do tipo Table
+
+* relembrar como funciona essa linha de comando: $this->set(compact('user'));

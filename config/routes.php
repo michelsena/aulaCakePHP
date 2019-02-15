@@ -68,6 +68,12 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/entregador/:action/*', ['controller' => 'Shippers']);
 
     $routes->redirect('/google', "http://www.google.com.br");
+
+    $routes->connect('/login'  , ['controller' => 'User', 'action' => 'login']);
+    $routes->connect('/logout' , ['controller' => 'User', 'action' => 'logout']);
+    //Criar rota para logOut
+
+
     /**
      * Connect catchall routes for all controllers.
      *
@@ -106,7 +112,6 @@ Router::scope('/', function (RouteBuilder $routes) {
    $routes->connect('/'          , ['controller' => 'Products', 'action' => 'index']);
    $routes->connect('/adicionar' , ['controller' => 'Products', 'action' => 'add']);
    $routes->connect('/:action/*' , ['controller' => 'Products']);
-
 
    $routes->fallbacks(DashedRoute::class);
  });

@@ -6,6 +6,10 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
+use Cake\Event\Event;
+use App\Model\Entity\User;
+use Cake\Utility\Security;
+
 /**
  * User Model
  *
@@ -81,5 +85,12 @@ class UserTable extends Table
         $rules->add($rules->isUnique(['email']));
 
         return $rules;
+    }
+
+    public function beforeSave(Event $event, User $entity){
+      $entity->password = Security::hash($entity->password, 'sha256');
+
+      // debug($entity);
+      // exit();
     }
 }
