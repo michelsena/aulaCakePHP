@@ -1,13 +1,37 @@
-=> 32 * 7 = 140 => 154
 
 1?ShipperName=&Phone=
 
-parei na aula 
+relembrando aula 10, parei em 23:48
 
 --> para fazer
+* rever as validações do login. Parei em 3:30
 * no Auth, comentar as rotas do loginRedirect e loginLogout
 
+--> Tempos de estudos
+=> 32 * 7 = 140 => 154
+
+18:46
++00:40
+-------
+ 19:26
+-01:55
+-------
+18:26
+00:55
+------
+ 17:57
++04:00
+-------
+
+----------------------------------------> anotações importantes
+* php bin/cake.php bake template [tabela] login, aula 10, 3:30
+
+
+
 ----------------------------------------> dúvidas
+--> Primárias
+* 
+
 --> secundárias
 * No MeuTesteController, usei o seguinte médoto:         $this->loadModel('Shippers');
 Esse método cria, em tempo de execução, o atributo Shippers no obj da classe MeuTesteController?
@@ -20,6 +44,7 @@ Na hora da importação da base (via guia SQL, do PHP Admin) deu erro nessa instru
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 
 ----------------------------------------> para pesquisar/ver
+* rever a aula da validação do e-mail
 * Nos elementos criados por nós, ver c é possível chamar como se fosse um atributo como acontece no Flash
 * Se o TableRegistry::get('Shippers'), pega um objeto do tipo Table
 

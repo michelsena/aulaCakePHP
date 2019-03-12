@@ -45,18 +45,20 @@ class CustomersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('CustomerID')
-            ->allowEmpty('CustomerID', 'create');
+            ->integer('CustomerID', __("É preciso ser do tipo inteiro"))
+            ->allowEmpty('CustomerID', 'create', __("Necessário o campo CustomerID"));
 
         $validator
-            ->scalar('CustomerName')
-            ->maxLength('CustomerName', 255)
-            ->allowEmpty('CustomerName');
+            ->scalar   ('CustomerName', __("Os dados é preciso ser do tipo escalar"))
+            ->maxLength('CustomerName', 255, __("Suporta, no máximo, 255 caracteres"))
+            ->minLength('CustomerName', 3  , __("É preciso preencher, no mínimo, 3 caracteres"))
+            ->notEmpty ('CustomerName', __("É preciso preencher o campo"));
 
         $validator
-            ->scalar('ContactName')
-            ->maxLength('ContactName', 255)
-            ->allowEmpty('ContactName');
+            ->scalar   ('ContactName', __("Os dados é preciso ser do tipo escalar"))
+            ->maxLength('ContactName', 255, __("Suporta, no máximo, 255 caracteres"))
+            ->minLength('ContactName', 3  , __("É preciso preencher, no mínimo, 3 caracteres"))
+            ->notEmpty ('ContactName', __("É preciso preencher o campo"));
 
         $validator
             ->scalar('Address')
@@ -74,9 +76,10 @@ class CustomersTable extends Table
             ->allowEmpty('PostalCode');
 
         $validator
-            ->scalar('Country')
+            ->scalar   ('Country')
             ->maxLength('Country', 255)
-            ->allowEmpty('Country');
+            ->inList   ('Country', ['BR', 'AR', 'US', 'UK', 'FR'], __("País não está na lista") )
+            ->notEmpty ('Country', __("É preciso preencher o campo"));
 
         return $validator;
     }
